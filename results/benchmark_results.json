@@ -1,0 +1,271 @@
+{
+  "dataset": "sklearn_digits",
+  "baseline": {
+    "config": {
+      "hidden_layer_sizes": [
+        64
+      ],
+      "learning_rate_init": 0.001,
+      "alpha": 0.0001,
+      "max_iter": 200
+    },
+    "test_accuracy": 0.9805555555555555
+  },
+  "best_trial": {
+    "config": {
+      "hidden_layer_sizes": [
+        64
+      ],
+      "learning_rate_init": 0.003,
+      "alpha": 0.0001,
+      "max_iter": 300,
+      "random_state": 42
+    },
+    "cv_accuracy_mean": 0.9784286682152535,
+    "cv_accuracy_std": 0.010187373023109838,
+    "test_accuracy": 0.9861111111111112
+  },
+  "all_trials": [
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          64
+        ],
+        "learning_rate_init": 0.003,
+        "alpha": 0.0001,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9784286682152535,
+      "cv_accuracy_std": 0.010187373023109838,
+      "test_accuracy": 0.9861111111111112
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          64
+        ],
+        "learning_rate_init": 0.003,
+        "alpha": 0.0005,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9784286682152535,
+      "cv_accuracy_std": 0.010187373023109838,
+      "test_accuracy": 0.9861111111111112
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          64
+        ],
+        "learning_rate_init": 0.001,
+        "alpha": 0.0001,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9784262485481998,
+      "cv_accuracy_std": 0.01347326238945037,
+      "test_accuracy": 0.9805555555555555
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          64
+        ],
+        "learning_rate_init": 0.001,
+        "alpha": 0.0005,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9784262485481998,
+      "cv_accuracy_std": 0.01347326238945037,
+      "test_accuracy": 0.9805555555555555
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          128,
+          64
+        ],
+        "learning_rate_init": 0.003,
+        "alpha": 0.0005,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9749491869918699,
+      "cv_accuracy_std": 0.013292223756507855,
+      "test_accuracy": 0.9694444444444444
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          128,
+          64
+        ],
+        "learning_rate_init": 0.003,
+        "alpha": 0.0001,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9742547425474255,
+      "cv_accuracy_std": 0.0133258074781046,
+      "test_accuracy": 0.9694444444444444
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          128,
+          64
+        ],
+        "learning_rate_init": 0.001,
+        "alpha": 0.0001,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.972861014324429,
+      "cv_accuracy_std": 0.012345006144133032,
+      "test_accuracy": 0.9694444444444444
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          128,
+          64
+        ],
+        "learning_rate_init": 0.001,
+        "alpha": 0.0005,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9721665698799846,
+      "cv_accuracy_std": 0.01265060991263361,
+      "test_accuracy": 0.9694444444444444
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          128,
+          128,
+          64
+        ],
+        "learning_rate_init": 0.001,
+        "alpha": 0.0001,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9721617305458767,
+      "cv_accuracy_std": 0.010104461244675313,
+      "test_accuracy": 0.9694444444444444
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          128,
+          128,
+          64
+        ],
+        "learning_rate_init": 0.001,
+        "alpha": 0.0005,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9721617305458767,
+      "cv_accuracy_std": 0.010104461244675313,
+      "test_accuracy": 0.9722222222222222
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          256,
+          128
+        ],
+        "learning_rate_init": 0.003,
+        "alpha": 0.0001,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9714745451025939,
+      "cv_accuracy_std": 0.008028032305691655,
+      "test_accuracy": 0.9694444444444444
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          256,
+          128
+        ],
+        "learning_rate_init": 0.001,
+        "alpha": 0.0005,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9707801006581495,
+      "cv_accuracy_std": 0.006785996695120744,
+      "test_accuracy": 0.9777777777777777
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          256,
+          128
+        ],
+        "learning_rate_init": 0.003,
+        "alpha": 0.0005,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9707776809910957,
+      "cv_accuracy_std": 0.008092256588122827,
+      "test_accuracy": 0.9694444444444444
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          128,
+          128,
+          64
+        ],
+        "learning_rate_init": 0.003,
+        "alpha": 0.0001,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9707752613240418,
+      "cv_accuracy_std": 0.010465997341984699,
+      "test_accuracy": 0.9694444444444444
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          256,
+          128
+        ],
+        "learning_rate_init": 0.001,
+        "alpha": 0.0001,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9700832365466512,
+      "cv_accuracy_std": 0.007139565407669816,
+      "test_accuracy": 0.9777777777777777
+    },
+    {
+      "config": {
+        "hidden_layer_sizes": [
+          128,
+          128,
+          64
+        ],
+        "learning_rate_init": 0.003,
+        "alpha": 0.0005,
+        "max_iter": 300,
+        "random_state": 42
+      },
+      "cv_accuracy_mean": 0.9700808168795974,
+      "cv_accuracy_std": 0.010462143412990016,
+      "test_accuracy": 0.9694444444444444
+    }
+  ],
+  "improvement_over_baseline": 0.005555555555555647
+}
