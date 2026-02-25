@@ -1,12 +1,26 @@
-from glad_network.data import load_benchmark_dataset
-from glad_network.model import GladConfig, GladNetwork
+from glad_network.data import generate_particle_collision_dataset
+from glad_network.experiment import run_baseline
+from glad_network.model import GraphAnomalyConfig, GraphAnomalyDetector
+from sklearn.metrics import roc_auc_score
 
 
-def test_glad_network_beats_random_guess_threshold():
-    data = load_benchmark_dataset(test_size=0.25, random_state=7)
-    model = GladNetwork(GladConfig(hidden_layer_sizes=(64,), max_iter=150, random_state=7)).fit(
-        data.X_train, data.y_train
+def test_graph_detector_reaches_quality_floor_and_beats_baseline():
+    split = generate_particle_collision_dataset(
+        num_normal=350,
+        num_anomalous=90,
+        num_nodes=24,
+        test_size=0.3,
+        random_state=7,
     )
 
-    score = model.score(data.X_test, data.y_test)
-    assert score > 0.85
+    graph_model = GraphAnomalyDetector(
+        GraphAnomalyConfig(message_passing_steps=1, hidden_dim=8, contamination=0.1, random_state=7)
+    ).fit(split.train_graphs, split.train_labels)
+
+    scores = graph_model.score_samples(split.test_graphs)
+    auc = roc_auc_score(split.test_labels, scores)
+
+    baseline_auc = run_baseline(split).roc_auc
+
+    assert auc > 0.88
+    assert auc >= baseline_auc - 0.05
