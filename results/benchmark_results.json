@@ -1,271 +1,433 @@
 {
-  "dataset": "sklearn_digits",
-  "baseline": {
-    "config": {
-      "hidden_layer_sizes": [
-        64
-      ],
-      "learning_rate_init": 0.001,
-      "alpha": 0.0001,
-      "max_iter": 200
-    },
-    "test_accuracy": 0.9805555555555555
+  "dataset": "synthetic_particle_collision_graphs",
+  "baseline_conv_autoencoder": {
+    "model_name": "conv_autoencoder_baseline",
+    "roc_auc": 1.0,
+    "average_precision": 0.9999999999999999,
+    "f1": 0.6238532110091743,
+    "threshold": 0.46286212690468315
   },
-  "best_trial": {
+  "best_graph_trial": {
     "config": {
-      "hidden_layer_sizes": [
-        64
-      ],
-      "learning_rate_init": 0.003,
-      "alpha": 0.0001,
-      "max_iter": 300,
+      "message_passing_steps": 1,
+      "hidden_dim": 8,
+      "contamination": 0.1,
       "random_state": 42
     },
-    "cv_accuracy_mean": 0.9784286682152535,
-    "cv_accuracy_std": 0.010187373023109838,
-    "test_accuracy": 0.9861111111111112
+    "metrics": {
+      "model_name": "graph_detector",
+      "roc_auc": 1.0,
+      "average_precision": 0.9999999999999999,
+      "f1": 0.5981308411214953,
+      "threshold": 0.6329780912361845
+    }
   },
-  "all_trials": [
+  "all_graph_trials": [
     {
       "config": {
-        "hidden_layer_sizes": [
-          64
-        ],
-        "learning_rate_init": 0.003,
-        "alpha": 0.0001,
-        "max_iter": 300,
+        "message_passing_steps": 1,
+        "hidden_dim": 8,
+        "contamination": 0.1,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9784286682152535,
-      "cv_accuracy_std": 0.010187373023109838,
-      "test_accuracy": 0.9861111111111112
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 1.0,
+        "average_precision": 0.9999999999999999,
+        "f1": 0.5981308411214953,
+        "threshold": 0.6329780912361845
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          64
-        ],
-        "learning_rate_init": 0.003,
-        "alpha": 0.0005,
-        "max_iter": 300,
+        "message_passing_steps": 1,
+        "hidden_dim": 8,
+        "contamination": 0.2,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9784286682152535,
-      "cv_accuracy_std": 0.010187373023109838,
-      "test_accuracy": 0.9861111111111112
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 1.0,
+        "average_precision": 0.9999999999999999,
+        "f1": 0.5981308411214953,
+        "threshold": 0.6329780912361845
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          64
-        ],
-        "learning_rate_init": 0.001,
-        "alpha": 0.0001,
-        "max_iter": 300,
+        "message_passing_steps": 1,
+        "hidden_dim": 8,
+        "contamination": 0.25,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9784262485481998,
-      "cv_accuracy_std": 0.01347326238945037,
-      "test_accuracy": 0.9805555555555555
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 1.0,
+        "average_precision": 0.9999999999999999,
+        "f1": 0.5981308411214953,
+        "threshold": 0.6329780912361845
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          64
-        ],
-        "learning_rate_init": 0.001,
-        "alpha": 0.0005,
-        "max_iter": 300,
+        "message_passing_steps": 1,
+        "hidden_dim": 16,
+        "contamination": 0.1,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9784262485481998,
-      "cv_accuracy_std": 0.01347326238945037,
-      "test_accuracy": 0.9805555555555555
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 1.0,
+        "average_precision": 0.9999999999999999,
+        "f1": 0.6607142857142857,
+        "threshold": 0.6265411803116445
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          128,
-          64
-        ],
-        "learning_rate_init": 0.003,
-        "alpha": 0.0005,
-        "max_iter": 300,
+        "message_passing_steps": 1,
+        "hidden_dim": 16,
+        "contamination": 0.2,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9749491869918699,
-      "cv_accuracy_std": 0.013292223756507855,
-      "test_accuracy": 0.9694444444444444
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 1.0,
+        "average_precision": 0.9999999999999999,
+        "f1": 0.6607142857142857,
+        "threshold": 0.6265411803116445
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          128,
-          64
-        ],
-        "learning_rate_init": 0.003,
-        "alpha": 0.0001,
-        "max_iter": 300,
+        "message_passing_steps": 1,
+        "hidden_dim": 16,
+        "contamination": 0.25,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9742547425474255,
-      "cv_accuracy_std": 0.0133258074781046,
-      "test_accuracy": 0.9694444444444444
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 1.0,
+        "average_precision": 0.9999999999999999,
+        "f1": 0.6607142857142857,
+        "threshold": 0.6265411803116445
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          128,
-          64
-        ],
-        "learning_rate_init": 0.001,
-        "alpha": 0.0001,
-        "max_iter": 300,
+        "message_passing_steps": 2,
+        "hidden_dim": 8,
+        "contamination": 0.1,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.972861014324429,
-      "cv_accuracy_std": 0.012345006144133032,
-      "test_accuracy": 0.9694444444444444
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 1.0,
+        "average_precision": 0.9999999999999999,
+        "f1": 0.6607142857142857,
+        "threshold": 0.6245605743130582
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          128,
-          64
-        ],
-        "learning_rate_init": 0.001,
-        "alpha": 0.0005,
-        "max_iter": 300,
+        "message_passing_steps": 2,
+        "hidden_dim": 8,
+        "contamination": 0.2,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9721665698799846,
-      "cv_accuracy_std": 0.01265060991263361,
-      "test_accuracy": 0.9694444444444444
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 1.0,
+        "average_precision": 0.9999999999999999,
+        "f1": 0.6607142857142857,
+        "threshold": 0.6245605743130582
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          128,
-          128,
-          64
-        ],
-        "learning_rate_init": 0.001,
-        "alpha": 0.0001,
-        "max_iter": 300,
+        "message_passing_steps": 2,
+        "hidden_dim": 8,
+        "contamination": 0.25,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9721617305458767,
-      "cv_accuracy_std": 0.010104461244675313,
-      "test_accuracy": 0.9694444444444444
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 1.0,
+        "average_precision": 0.9999999999999999,
+        "f1": 0.6607142857142857,
+        "threshold": 0.6245605743130582
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          128,
-          128,
-          64
-        ],
-        "learning_rate_init": 0.001,
-        "alpha": 0.0005,
-        "max_iter": 300,
+        "message_passing_steps": 2,
+        "hidden_dim": 16,
+        "contamination": 0.1,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9721617305458767,
-      "cv_accuracy_std": 0.010104461244675313,
-      "test_accuracy": 0.9722222222222222
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 1.0,
+        "average_precision": 0.9999999999999999,
+        "f1": 0.5849056603773585,
+        "threshold": 0.5923670398963208
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          256,
-          128
-        ],
-        "learning_rate_init": 0.003,
-        "alpha": 0.0001,
-        "max_iter": 300,
+        "message_passing_steps": 2,
+        "hidden_dim": 16,
+        "contamination": 0.2,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9714745451025939,
-      "cv_accuracy_std": 0.008028032305691655,
-      "test_accuracy": 0.9694444444444444
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 1.0,
+        "average_precision": 0.9999999999999999,
+        "f1": 0.5849056603773585,
+        "threshold": 0.5923670398963208
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          256,
-          128
-        ],
-        "learning_rate_init": 0.001,
-        "alpha": 0.0005,
-        "max_iter": 300,
+        "message_passing_steps": 2,
+        "hidden_dim": 16,
+        "contamination": 0.25,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9707801006581495,
-      "cv_accuracy_std": 0.006785996695120744,
-      "test_accuracy": 0.9777777777777777
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 1.0,
+        "average_precision": 0.9999999999999999,
+        "f1": 0.5849056603773585,
+        "threshold": 0.5923670398963208
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          256,
-          128
-        ],
-        "learning_rate_init": 0.003,
-        "alpha": 0.0005,
-        "max_iter": 300,
+        "message_passing_steps": 1,
+        "hidden_dim": 24,
+        "contamination": 0.1,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9707776809910957,
-      "cv_accuracy_std": 0.008092256588122827,
-      "test_accuracy": 0.9694444444444444
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9999555555555556,
+        "average_precision": 0.9998245614035086,
+        "f1": 0.672566371681416,
+        "threshold": 0.6005342914028544
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          128,
-          128,
-          64
-        ],
-        "learning_rate_init": 0.003,
-        "alpha": 0.0001,
-        "max_iter": 300,
+        "message_passing_steps": 1,
+        "hidden_dim": 24,
+        "contamination": 0.2,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9707752613240418,
-      "cv_accuracy_std": 0.010465997341984699,
-      "test_accuracy": 0.9694444444444444
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9999555555555556,
+        "average_precision": 0.9998245614035086,
+        "f1": 0.672566371681416,
+        "threshold": 0.6005342914028544
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          256,
-          128
-        ],
-        "learning_rate_init": 0.001,
-        "alpha": 0.0001,
-        "max_iter": 300,
+        "message_passing_steps": 1,
+        "hidden_dim": 24,
+        "contamination": 0.25,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9700832365466512,
-      "cv_accuracy_std": 0.007139565407669816,
-      "test_accuracy": 0.9777777777777777
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9999555555555556,
+        "average_precision": 0.9998245614035086,
+        "f1": 0.672566371681416,
+        "threshold": 0.6005342914028544
+      }
     },
     {
       "config": {
-        "hidden_layer_sizes": [
-          128,
-          128,
-          64
-        ],
-        "learning_rate_init": 0.003,
-        "alpha": 0.0005,
-        "max_iter": 300,
+        "message_passing_steps": 3,
+        "hidden_dim": 8,
+        "contamination": 0.1,
         "random_state": 42
       },
-      "cv_accuracy_mean": 0.9700808168795974,
-      "cv_accuracy_std": 0.010462143412990016,
-      "test_accuracy": 0.9694444444444444
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9997777777777778,
+        "average_precision": 0.9991226222805168,
+        "f1": 0.717948717948718,
+        "threshold": 0.641546284784152
+      }
+    },
+    {
+      "config": {
+        "message_passing_steps": 3,
+        "hidden_dim": 8,
+        "contamination": 0.2,
+        "random_state": 42
+      },
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9997777777777778,
+        "average_precision": 0.9991226222805168,
+        "f1": 0.717948717948718,
+        "threshold": 0.641546284784152
+      }
+    },
+    {
+      "config": {
+        "message_passing_steps": 3,
+        "hidden_dim": 8,
+        "contamination": 0.25,
+        "random_state": 42
+      },
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9997777777777778,
+        "average_precision": 0.9991226222805168,
+        "f1": 0.717948717948718,
+        "threshold": 0.641546284784152
+      }
+    },
+    {
+      "config": {
+        "message_passing_steps": 3,
+        "hidden_dim": 16,
+        "contamination": 0.1,
+        "random_state": 42
+      },
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9993333333333334,
+        "average_precision": 0.9975808678684216,
+        "f1": 0.6842105263157895,
+        "threshold": 0.5917668223773113
+      }
+    },
+    {
+      "config": {
+        "message_passing_steps": 3,
+        "hidden_dim": 16,
+        "contamination": 0.2,
+        "random_state": 42
+      },
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9993333333333334,
+        "average_precision": 0.9975808678684216,
+        "f1": 0.6842105263157895,
+        "threshold": 0.5917668223773113
+      }
+    },
+    {
+      "config": {
+        "message_passing_steps": 3,
+        "hidden_dim": 16,
+        "contamination": 0.25,
+        "random_state": 42
+      },
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9993333333333334,
+        "average_precision": 0.9975808678684216,
+        "f1": 0.6842105263157895,
+        "threshold": 0.5917668223773113
+      }
+    },
+    {
+      "config": {
+        "message_passing_steps": 3,
+        "hidden_dim": 24,
+        "contamination": 0.1,
+        "random_state": 42
+      },
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9971111111111112,
+        "average_precision": 0.9867371769283636,
+        "f1": 0.6238532110091743,
+        "threshold": 0.5599527317123663
+      }
+    },
+    {
+      "config": {
+        "message_passing_steps": 3,
+        "hidden_dim": 24,
+        "contamination": 0.2,
+        "random_state": 42
+      },
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9971111111111112,
+        "average_precision": 0.9867371769283636,
+        "f1": 0.6238532110091743,
+        "threshold": 0.5599527317123663
+      }
+    },
+    {
+      "config": {
+        "message_passing_steps": 3,
+        "hidden_dim": 24,
+        "contamination": 0.25,
+        "random_state": 42
+      },
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9971111111111112,
+        "average_precision": 0.9867371769283636,
+        "f1": 0.6238532110091743,
+        "threshold": 0.5599527317123663
+      }
+    },
+    {
+      "config": {
+        "message_passing_steps": 2,
+        "hidden_dim": 24,
+        "contamination": 0.1,
+        "random_state": 42
+      },
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9963111111111111,
+        "average_precision": 0.9805889988983364,
+        "f1": 0.5925925925925926,
+        "threshold": 0.5706655995372065
+      }
+    },
+    {
+      "config": {
+        "message_passing_steps": 2,
+        "hidden_dim": 24,
+        "contamination": 0.2,
+        "random_state": 42
+      },
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9963111111111111,
+        "average_precision": 0.9805889988983364,
+        "f1": 0.5925925925925926,
+        "threshold": 0.5706655995372065
+      }
+    },
+    {
+      "config": {
+        "message_passing_steps": 2,
+        "hidden_dim": 24,
+        "contamination": 0.25,
+        "random_state": 42
+      },
+      "metrics": {
+        "model_name": "graph_detector",
+        "roc_auc": 0.9963111111111111,
+        "average_precision": 0.9805889988983364,
+        "f1": 0.5925925925925926,
+        "threshold": 0.5706655995372065
+      }
     }
   ],
-  "improvement_over_baseline": 0.005555555555555647
+  "graph_minus_baseline_auc": 0.0
 }
